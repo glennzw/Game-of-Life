@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Glenn's Game of Life</title>
+</head>
+
+<body>
+<h1>The Game Of Life</H1>
+
+<h2> Intro </h2>
+<font size = 2 face = Arial>
+
+My Game of Life is an implementation of Conway's Rules of Life. These rules were a set of laws
+governing the life cycles of single celled organisms on a grid. They were
+invented by the mathematician John H Conway.<p>
+
+The Game of Life takes place on a grid of cells. Ideally, the grid should
+have infinite length and width, but this is not practically possible.<p>
+
+Each cell has up to 8 neighbours. If a cell already is alive, and has more
+than three neighbours, then it dies of overexposure. If it is alive and has
+two or three neighbours, then it continues on, alive. If it has less than
+2 neighbours, it dies of overexposure. If the cell is dead, and it has
+exactly three neighbours, it respawns.<p>
+
+This simple and elegant set of Rules, courtesy of Mr Conway, have been the
+subject of several studies and a massive amount of computer simulations.
+Currently, only one example of a formation not achievable from another
+formation (ie has to be manually set up), that produces more and more cells
+infinitely, has been found. It was called the 'Glider Gun' formation, found
+by a group of MIT students. There is another theoretical pattern called the
+"Garden of Eden", which has the same properties as the glider.<p>
+ 
+<h2>'Playing' my Game</h2>
+The following commands apply to the main screen in Life:<p>
+
+Keys:<br>
+ - Pressing 's' starts/stops the simulation.<br>
+ - Pressing 'c' clears the grid of all active cells.<br>
+ - Pressing 'd' switches between eraser mode.<br>
+ - Pressing 'r' creates a random grid.<br>
+ - Pressing 's' saves the current pattern of cells. (Not Implemented yet)<p>
+ Pressing 1 through 9 loads predefined layouts
+
+<p>
+Mouse:<br>
+ - Clicking on any cell will reverse it's current state.<br>
+ - Dragging the mouse in draw mode will fill multiple cells.<br>
+ - Dragging the mouse in erase mode will kill cells.<br>
+ <p>
+ There are a few sound effects if you have a soundcard ;-)
+ <p>
+ <a href ="myLife.html"> Continue to Simulation </a>
+ <p>
+ <br>
+ Notes:<br>
+ -The graphics do flicker a bit on slower PCs, that's because this isn't the doubleBuffering version (to 
+  keep within the restraints of the restricted group)<br> 
+ -I made a module to save the grid layout, but afterwards realised that an applet can't have
+ write access to your HDD, that works in the application version.
+<p> Oh, and it's not quite finished, time kinda ran out :P
+ 
+
+</body>
+</html>
